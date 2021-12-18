@@ -21,6 +21,8 @@ const initRootStore = async () => {
 
   onSnapshot(rootStore, (snapshot) => AsyncStorage.setItem(ROOT_STORE_KEY, JSON.stringify(snapshot)));
 };
+
+
 export default function App() {
   const rootStore: RootStore = RootStoreModel.create();
 
